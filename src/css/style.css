@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: #525252;
+  line-height: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #525252;
+  margin: 15px 0;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+a {
+  color: #83b46d;
+  text-decoration: none;
+}
+a:hover {
+  color: #83b46d;
+  text-decoration: underline;
+}
+p {
+  margin: 0 0 15px;
+}
+b,
+strong {
+  font-weight: 600;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.img {
+  margin: 15px 0;
+}
+ul,
+ol {
+  margin: 15px 0;
+  line-height: 2rem;
+}
+code {
+  padding: 5px 7px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #525252;
+}
+pre {
+  margin: 15px 0;
+}
+.toc {
+  position: relative;
+  list-style-type: none;
+  padding: 20px 20px 20px 30px;
+  margin: 15px 0;
+  background-color: #f6f6f6;
+  counter-reset: b;
+}
+.toc ol {
+  list-style-type: none;
+}
+.toc ol li:last-child {
+  margin-bottom: 10px;
+}
+.toc > li:before {
+  content: counter(b) '. ';
+  counter-increment: b;
+}
+.toc > li > ol {
+  counter-reset: c;
+}
+.toc > li > ol > li:before {
+  content: counter(b) '.' counter(c) '. ';
+  counter-increment: c;
+}
+.toc > li > ol > li > ol {
+  counter-reset: d;
+}
+.toc > li > ol > li > ol > li:before {
+  content: counter(b) '.' counter(c) '. ' counter(d) '. ';
+  counter-increment: d;
+}
+.toc ol li:before,
+.toc > li:before {
+  color: #969696;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.vl-alert {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 4px;
+}
+.vl-alert p:last-child {
+  margin-bottom: 0;
+}
+.vl-alert a,
+.vl-alert a:hover {
+  color: #525252;
+  font-weight: 600;
+}
+.vl-alert--success {
+  color: #fff;
+  background-color: #75c181;
+}
+.vl-alert--info {
+  color: #fff;
+  background-color: #58bbee;
+}
+.vl-alert--warning {
+  color: #fff;
+  background-color: #fba944;
+}
+.vl-alert--danger {
+  color: #fff;
+  background-color: #f77b6b;
+}
+.rate {
+  max-height: 20px;
+}
+.vl-btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  border-radius: 3px;
+  user-select: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5rem;
+  padding: 7px 20px;
+  background-color: #83b46d;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 rgba(82,82,82,0.1);
+  color: #fff;
+}
+.vl-btn img {
+  margin-right: 5px;
+  max-height: 16px;
+  position: relative;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+.vl-btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.vl-btn--instagram {
+  background-color: #88624e;
+}
+.vl-btn--twitter {
+  background-color: #3eb5f1;
+}
+.vl-btn--subscribe {
+  background-color: #ff8737;
+}
+.vl-content {
+  padding: 60px 0;
+}
+.vl-header {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+  border-top: 5px solid #83b46d;
+}
+.vl-header .vl-header--icon {
+  max-height: 38px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.vl-header .vl-header--title {
+  color: #83b46d;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 38px;
+}
+.vl-header .vl-header--title strong {
+  color: #525252;
+}
+.vl-header .vl-header--subtitle {
+  margin: 20px 0 0;
+  color: #a7a7a7;
+  line-height: 1;
+}
+.vl-header .vl-header--subtitle img {
+  max-height: 15px;
+  margin-right: 6px;
+  vertical-align: top;
+}
+.vl-site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+.vl-site-nav > ul > li {
+  margin-bottom: 5px;
+}
+.vl-site-nav > ul > li.active > a {
+  border-color: #83b46d;
+  color: #83b46d;
+}
+.vl-site-nav li a {
+  display: block;
+  padding: 5px 15px;
+  border-left: 4px solid transparent;
+  color: #525252;
+  text-decoration: none;
+}
+.vl-site-nav li a:hover {
+  color: #83b46d;
+}
+ul.sub-menu li a {
+  padding-left: 35px;
+  font-size: 14px;
+}
+ul.sub-menu li.active > a {
+  color: #83b46d;
+}
+.vl-section {
+  padding: 15px 0;
+}
+.vl-section--title {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+}
+.vl-section--content {
+  padding: 15px 0;
+}
+.vl-footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #4a4a4a;
+  color: #a7a7a7;
+}
+.vl-footer p {
+  margin: 0;
+}

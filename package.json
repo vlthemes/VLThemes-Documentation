@@ -1,0 +1,16 @@
+{
+    "name": "docs",
+    "private": true,
+    "version": "1.0.0",
+    "engines": {
+        "node": ">=6.5",
+        "npm": ">=3.10"
+    },
+    "devDependencies": {
+        "inline-source": "^5.2.0",
+        "filendir": "^1.0.0"
+    },
+    "scripts": {
+        "start": "node build.js"
+    }
+}
