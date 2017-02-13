@@ -6,11 +6,11 @@ This documentation is perfect for your products. We have added only the necessar
 ##Build with NPM##
 First of all install npm and run console in the project folder:
 
-<pre>`npm install`</pre>
+<pre>npm install</pre>
 
 After that you will be able to build Theme Documentation
 
-<pre>`npm start`</pre>
+<pre>npm start</pre>
 
 Build will be added here /build/index.html
 
