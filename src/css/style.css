@@ -1,3 +1,10 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: VLThemes Documentation
+Version: 1.0
+
+-------------------------------------------------------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -155,6 +162,7 @@ pre {
   font-size: 14px;
   line-height: 1.5rem;
   padding: 7px 20px;
+  margin: 0 0 4px 0;
   background-color: #83b46d;
   text-decoration: none;
   box-shadow: inset 0 -2px 0 rgba(82,82,82,0.1);
