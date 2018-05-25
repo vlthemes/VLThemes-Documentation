@@ -1,0 +1,285 @@
+$c1 = #f0f1f3
+$c2 = #242424
+$c3 = #263a48
+$c4 = #eeeeee
+$c5 = #98999c
+$c6 = #ffffff
+$c7 = #d54e21
+$c8 = #f0f2f4
+$c9 = #000000
+$c10 = #1e8cbe
+$c11 = #e6e8ea
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td
+	margin 0
+	padding 0
+
+*,
+::before,
+::after
+	box-sizing border-box
+
+img,
+object,
+embed
+	max-width 100%
+	height auto
+
+object,
+embed
+	height 100%
+
+img
+	margin 1.25% 0
+
+html
+	padding 2%
+	background-color $c1
+
+body
+	margin 5% auto
+	max-width 800px
+	font-size 16px
+	line-height 1.6
+	color $c2
+	font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+	&::after
+		content ''
+		display table
+		clear both
+
+header
+	margin-bottom 8%
+
+footer
+	text-align center
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h1 a
+	color $c3
+	font-weight 500
+	text-decoration none
+
+h1,
+h2
+	font-size 36px
+	padding-bottom 0.3em
+	margin-bottom 0.4em
+	border-bottom 1px solid $c4
+
+h2
+	font-size 22px
+	padding-bottom 0.6em
+	margin-bottom 0.6em
+	margin-top 2.5em
+
+h3
+	font-size 18px
+	margin-bottom 0.3em
+
+h1 small a
+	color $c5
+	font-size 15px
+	font-weight normal
+	float right
+	position absolute
+	top 15px
+	right 20px
+
+section
+	background $c6
+	margin-bottom 1%
+	position relative
+	padding 6% 8%
+
+blockquote
+	border-left 3px solid $c7
+	font-size 16px
+	padding 0 0 0 20px
+	color $c7
+
+	a
+		color $c7
+		font-weight 500
+
+	code
+		color $c7
+
+code,
+cite
+	background-color $c8
+	border-radius 3px
+	color $c9
+	font inherit
+	padding 2px 7px
+	white-space nowrap
+
+pre
+	background-color $c8
+	clear both
+	border-radius 4px
+	display block
+	font-size 14px
+	overflow auto
+	padding 20px
+	white-space pre-wrap
+	word-wrap break-word
+
+pre + img
+	margin-top 2.4em
+
+.gist
+	margin-top 5.1%
+	margin-bottom 5%
+
+a
+	color $c10
+	text-decoration underline
+
+	&:hover
+		color $c7
+
+ul
+	list-style none
+
+ol
+	list-style number
+
+ul,
+ol
+	list-style-position inside
+
+ul li,
+ol li
+	margin-bottom 5px
+	&:last-child
+		margin-bottom 0
+
+p,
+ul,
+ol,
+blockquote
+	margin-bottom 4%
+
+ul ul
+	padding-top 0
+	margin-bottom 0
+	margin-left 4%
+	li::before
+		content '-'
+		display inline-block
+		padding-right 2%
+
+ul.col-2
+	color $c5
+	column-count 2
+	column-gap 20px
+
+@media (min-width 576px)
+	ul.col-2
+		column-count 3
+		column-gap 20px
+
+nav
+	min-width 215px
+	margin-bottom 5px
+	margin-top 15px
+	background $c1
+
+	&:first-of-type a
+		color $c7
+		border-radius 0
+
+		&:hover
+			color $c7
+
+		&::before
+			background-color $c7
+
+	&.affix
+		position fixed
+		top 20px
+
+	&.affix-bottom
+		position absolute
+
+	a
+		display block
+		position relative
+		width 100%
+		padding 10px 12px
+		padding-right 3px
+		font-size 15px
+		cursor pointer
+		font-weight 500
+		text-decoration none
+		border-radius 3px
+		border-bottom 2px solid $c6
+
+		&::before
+			content ''
+			display none
+			position absolute
+			width 4px
+			top 0
+			left 0
+			height 100%
+			background $c10
+
+		&:hover
+			color $c10
+			text-decoration underline
+			background-color $c11
+
+			&::before
+				display block
+
+		&:last-of-type
+			border-bottom none
+
+@media (max-width: 1199px)
+	body
+		margin 0 auto
+
+@media (max-width: 767px)
+	header span
+		display none
+
+	h1
+		font-size 26px
+
+	h2
+		font-size 20px
+
+@media (max-width: 575px)
+	p,
+	ul,
+	ol,
+	blockquote
+		margin-bottom 8%
