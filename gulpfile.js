@@ -9,9 +9,9 @@ var pkg = require('./package.json'),
 
 var name = "Folim",
 	slug = "folim",
-	demoUrl = "http://vlthemes.com/#folim",
-	purchaseUrl = "http://themeforest.com/cart/add_items?ref=vlthemes&item_ids=21517204",
-	changelogUrl = "https://themeforest.net/item/norwood-minimalist-multipurpose-portfolio-wordpress-theme/21517204#item-description__changelog",
+	demoUrl = "http://vlthemes.com/#folim_wp",
+	purchaseUrl = "http://themeforest.com/cart/add_items?ref=vlthemes&item_ids=21992924",
+	changelogUrl = "https://themeforest.net/item/folim-clean-minimalist-portfolio-wordpress-theme/21992924#item-description__changelog",
 	authorUrl = "https://themeforest.net/user/vlthemes/portfolio",
 	supportUrl= "http://vlthemes.ticksy.com/";
 

@@ -101,7 +101,8 @@ h2
 
 h3
 	font-size 18px
-	margin-bottom 0.3em
+	margin-top 0.3em
+	margin-bottom 0.6em
 
 h1 small a
 	color $c5
@@ -177,7 +178,7 @@ ol
 
 ul li,
 ol li
-	margin-bottom 5px
+	margin-bottom 0.5em
 	&:last-child
 		margin-bottom 0
 
@@ -187,7 +188,12 @@ ol,
 blockquote
 	margin-bottom 4%
 
-ul ul
+ul ul,
+ol ol,
+ul ol,
+ol ul,
+ul.list,
+ol.list
 	padding-top 0
 	margin-bottom 0
 	margin-left 4%
@@ -195,6 +201,11 @@ ul ul
 		content '-'
 		display inline-block
 		padding-right 2%
+
+ul.list,
+ol.list
+	margin-left 0
+	line-height 2
 
 ul.col-2
 	color $c5
