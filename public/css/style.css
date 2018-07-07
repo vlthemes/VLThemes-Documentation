@@ -205,13 +205,12 @@ ol.list {
   line-height: 2;
 }
 ul.col-2 {
-  color: #98999c;
   column-count: 2;
   column-gap: 20px;
 }
 @media (min-width: 576px) {
   ul.col-2 {
-    column-count: 3;
+    column-count: 2;
     column-gap: 20px;
   }
 }

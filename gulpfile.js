@@ -3,15 +3,19 @@ var pkg = require('./package.json'),
 	stylus = require('gulp-stylus'),
 	inline = require('gulp-inline'),
 	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename'),
 	minifyCss = require('gulp-minify-css'),
 	autoprefixer = require('gulp-autoprefixer'),
 	replace = require('gulp-replace-task');
 
-var name = "Folim",
-	slug = "folim",
-	demoUrl = "http://vlthemes.com/#folim_wp",
-	purchaseUrl = "http://themeforest.com/cart/add_items?ref=vlthemes&item_ids=21992924",
-	changelogUrl = "https://themeforest.net/item/folim-clean-minimalist-portfolio-wordpress-theme/21992924#item-description__changelog",
+// wp, html, psd
+var build_for = 'for_' + 'psd';
+
+var name = "Leedo",
+	slug = "leedo",
+	demoUrl = "#",
+	purchaseUrl = "#",
+	changelogUrl = "##item-description__changelog",
 	authorUrl = "https://themeforest.net/user/vlthemes/portfolio",
 	supportUrl= "http://vlthemes.ticksy.com/";
 
@@ -22,7 +26,7 @@ gulp.task('stylus', function() {
 });
 
 gulp.task('build', function() {
-	return gulp.src('public/index.html')
+	return gulp.src('public/'+build_for+'.html')
 	.pipe(inline({
 		base: 'public/',
 		js: uglify,
@@ -69,6 +73,7 @@ gulp.task('build', function() {
 			}
 		]
 	}))
+	.pipe(rename('index.html'))
 	.pipe(gulp.dest('dist/'));
 });
 

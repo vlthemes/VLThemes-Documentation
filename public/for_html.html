@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>@@name Help Guide | @@author</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<section id="Menu">
+		<header>
+			<h1>@@name</h1>
+			<p>Set-up &amp; general guide to help you get the most out of your new HTML template. If you are still having trouble after reading this guide, <a href="@@supportUrl" target="_blank">contact our help team</a>.</p>
+		</header>
+		<nav>
+			<a href="@@demoUrl" target="blank">Live Demo</a>
+			<a href="@@changelogUrl" target="blank">Changelog</a>
+			<a href="@@purchaseUrl" target="blank">Buy @@name</a>
+		</nav>
+		<nav>
+			<a href="#GettingStarted">Getting Started</a>
+
+			<a href="#ShowContent">Show Content</a>
+
+			<a href="#Installation">Installation</a>
+
+			<a href="#GoogleMap">Google Map</a>
+
+			<a href="#AjaxContactForm">Ajax Contact Form</a>
+
+			<a href="#Credits">Credits</a>
+
+		</nav>
+	</section>
+
+	<section id="GettingStarted">
+		<h1><a href="#GettingStarted">Getting Started</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>Thank you for purchasing @@name!</p>
+		<p>@@name is a clean and minimal HTML template. This template will suite for designers, photographers, web agencies and studios, freelancers and so on. A template is based on Bootstrap 4 grid and will work perfectly on any screens and devices.</p>
+		<p>Hope you’ll enjoy using @@name as much as we enjoyed developing it.</p>
+		<h2>Files Structure</h2>
+		<ul class="list">
+			<li>
+				<code>/app/</code> - main template folder with all files to getting started
+				<ul>
+					<li>
+						<code>/*.html</code> – all html files
+					</li>
+					<li>
+						<code>/php/</code> – php file for Contact Form
+					</li>
+					<li>
+						<code>/assets/css/</code> – main template css files
+					</li>
+					<li>
+						<code>/assets/fonts/</code> – main template fonts files
+					</li>
+					<li>
+						<code>/assets/scripts/</code> – main template js files
+					</li>
+					<li>
+						<code>/assets/vendor/</code> – 3rd-party plugins
+					</li>
+					<li>
+						<code>/assets/img/</code> – all images used in template (note, in downloadable archive this is placeholder images)
+					</li>
+				</ul>
+			</li>
+			<li>
+				<code>/pug/</code> - source files for developers
+			</li>
+			<li>
+				<code>/documentation/</code> - documentation HTML files
+			</li>
+			<li>
+				<code>/package.json</code> – npm packages for developers
+			</li>
+			<li>
+				<code>/gulpfile.js</code> – gulp file for developers
+			</li>
+		</ul>
+		<h2>Development</h2>
+		<p>Skylith template is developer-friendly and contains source files + gulp tasks.</p>
+		<p>Make sure, that we will not help you with any troubles that you faced with source builds, so if you don’t have any experience with <code>npm</code> and <code>gulp</code>, please first learn more about these tools. These sources only for developers.</p>
+		<h3>Requirements</h3>
+		<p><code>Node.js</code> and <code>npm</code> – <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a></p>
+		<h3>Getting started</h3>
+		<ol>
+			<li>Unzip downloaded template and open /@@slug/ folder</li>
+			<li>Install packages <code>npm install</code></li>
+			<li>Start development <code>gulp</code></li>
+		</ol>
+		<blockquote>All build configurations placed in package.json</blockquote>
+	</section>
+
+	<section id="ShowContent">
+		<h1><a href="#ShowContent">Show Content</a><small><a href="#html">Back to Top</a></small></h1>
+		<ol>
+			<li>
+				Inspect element - when editing html and css files utilities like <a href="https://getfirebug.com" target="_blank">Firebug</a> (free firefox plugin) are great helpers. With them you can easily find element style, even the stylesheet name and line number where the inspected style rule is</a>
+			</li>
+			<li>
+				Edit html/css/js/php files - use your favorite text editor. Editor, that highlights syntax is good choice, <a href="http://www.pspad.com/" target="_blank">Pspad</a> (free) or <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> (free) might be enough
+			</li>
+			<li>
+				View pages - any common browser like <a href="http://www.mozilla.org/en-US/firefox/" target="_blank">Mozilla Firefox</a> (free)
+			</li>
+			<li>
+				Upload on server - look for some FTP program - <a href="https://filezilla-project.org/" target="_ulank">FileZilla</a> (free)
+			</li>
+		</ol>
+	</section>
+
+	<section id="Installation">
+		<h1><a href="#Installation">Installation</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>To install @@name on your web server, download the files and unzip them to the local disk on your computer. Inside the extracted folder you will see <code>@@slug</code> folder. Using an FTP Client (such as Filezilla or Total Commander), upload all of the contents of the <code>@@slug</code> folder to your server.</p>
+		<p>You must have JavaScript enabled in your browser. Also, a web server is required for the video background - testing it locally (unless using a development server such as Wamp or Mamp server) will not work.</p>
+		<blockquote>If a user does not have JavaScript enabled in their browser, the site does not load and a message is displayed informing them of the problem.</blockquote>
+		<blockquote>This is not a WordPress theme, so cannot be installed with WordPress.</blockquote>
+	</section>
+
+	<section id="GoogleMap">
+		<h1><a href="#GoogleMap">Google Map</a><small><a href="#html">Back to Top</a></small></h1>
+		<ul>
+			<li>
+				<a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">Get API key</a>
+			</li>
+			<li>
+				<a href="https://www.latlong.net" target="_blank">Get Latitude and Longitude</a>
+			</li>
+		</ul>
+		<script src="https://gist.github.com/vlthemes/73db0252686a090b3f8cfb74e64d93f9.js"></script>
+	</section>
+
+	<section id="AjaxContactForm">
+		<h1><a href="#AjaxContactForm">AJAX Contact Form</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>To configure contact form you should change variables in file <code>@@slug/php/contact.php</code></p>
+		<ul>
+			<li>
+				<code>$from</code> – ID for form tracking
+			</li>
+			<li>
+				<code>$to</code> – destination address (email), where will send a message
+			</li>
+			<li>
+				<code>$subject</code> – the subject of the message
+			</li>
+		</ul>
+		<script src="https://gist.github.com/vlthemes/c8183ab79202164f181f0ad8128d9212.js"></script>
+	</section>
+
+	<section id="Credits">
+		<h1><a href="#Credits">Credits</a><small><a href="#html">Back to Top</a></small></h1>
+		<h2>Plugins</h2>
+		<ul class="list">
+			<li>
+				<a href="https://github.com/michalsnik/aos" target="_blank">AOS</a>
+			</li>
+			<li>
+				<a href="https://github.com/mhuggins/jquery-countTo" target="_blank">countTo</a>
+			</li>
+			<li>
+				<a href="https://github.com/desandro/imagesloaded" target="_blank">imagesLoaded</a>
+			</li>
+			<li>
+				<a href="https://github.com/nk-o/jarallax" target="_blank">Jarallax</a>
+			</li>
+			<li>
+				<a href="https://codecanyon.net/item/cube-portfolio-responsive-jquery-grid-plugin/6372959" target="_blank">CubePortfolio</a>
+			</li>
+			<li>
+				<a href="https://github.com/fancyapps/fancybox" target="_blank">Fancybox</a>
+			</li>
+			<li>
+				<a href="https://github.com/protonet/jquery.inview" target="_blank">InView</a>
+			</li>
+			<li>
+				<a href="https://github.com/miromannino/Justified-Gallery" target="_blank">JustifiedGallery</a>
+			</li>
+			<li>
+				<a href="https://github.com/rstacruz/jquery.transit" target="_blank">Transit</a>
+			</li>
+			<li>
+				<a href="https://github.com/kenwheeler/slick" target="_blank">Slick Slider</a>
+			</li>
+			<li>
+				<a href="https://github.com/jquery-form/form" target="_blank">jQuery Form</a>
+			</li>
+			<li>
+				<a href="https://github.com/jquery-validation/jquery-validation" target="_blank">jQuery Validate</a>
+			</li>
+		</ul>
+		<h2>Images</h2>
+		<p>The sample images viewed in the template preview are for demo purposes only and are not included with your purchase. These images are courtesy of:</p>
+		<ul class="list">
+			<li>
+				<a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a>
+			</li>
+		</ul>
+		<h2>Fonts</h2>
+		<ul class="list">
+			<li>
+				<a href="https://fonts.google.com/specimen/Saira+Condensed" target="_blank">Saira Condensed</a>
+			</li>
+			<li>
+				<a href="https://fonts.google.com/specimen/Muli" target="_blank">Muli</a>
+			</li>
+			<li>
+				<a href="https://fonts.google.com/specimen/PT+Serif" target="_blank">PT Serif</a>
+			</li>
+		</ul>
+		<h2>Icons</h2>
+		<ul class="list">
+			<li>
+				<a href="https://www.flaticon.com/" target="_blank">Free Icons</a>
+			</li>
+			<li>
+				<a href="http://themes-pixeden.com/font-demos/7-stroke/" target="_blank">7 Stroke</a>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<footer>
+			<a href="@@demoUrl" target="blank">@@name</a> developed by <a href="@@authorUrl" target="blank">@@author</a>
+		</footer>
+	</section>
+
+</body>
+</html>
